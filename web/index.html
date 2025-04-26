@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: white;
+        }
+
+        .logo {
+            font-weight: bold;
+            color: #4834d4;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .get-started {
+            background: #4834d4;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            background: linear-gradient(135deg, #4834d4 0%, #686de0 100%);
+            min-height: calc(100vh - 70px);
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 500px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            margin-bottom: 2rem;
+        }
+
+        .more-info {
+            background: white;
+            color: #4834d4;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .hero-image {
+            width: 50%;
+            max-width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .hero-image {
+                width: 100%;
+                margin-top: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">LOGO</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Course</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#" class="get-started">Get Started</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>BUSINESS<br>LANDING PAGE</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            <a href="#" class="more-info">More Info</a>
+        </div>
+        <div class="hero-image">
+            <!-- 這裡可以放置您的團隊合作插圖 -->
+        </div>
+    </section>
+</body>
+</html>
